@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício com NodeList</title>
+    <title>Amsterdan IMC</title>
     <link rel="stylesheet" href="/IMC-Calculator/css/style.css">
 </head>
 <body>
-    </header>
+    <header>
       <nav>
         <a class="logo" href="#">Amsterdan</a>
-        <div class="menuP">
-        <a class="inicio" href="">Inicio</a>
-        <a class="sobre" href="">Sobre</a>
-        <a class="imc" href="">IMC</a>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-        <ul>
+        <ul class="nav-list">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
             <li><a href="#">Oque é IMC?</a></li>
         </ul>
     </nav>
-    <header>
+    </header>
+    <div class="container">
+        <section class="content">
+            <h1 class="titulo">Calculadora de IMC</h1>
 
-     <script src='../js/main.js'></script>
+            <form action="/" id="formulário" method="POST">
+                <label for="peso">Peso:</label>
+                <input type="text" id="peso" name="peso" placeholder="Digite o seu Peso">
+
+                <label for="altura">Altura:</label>
+                <input type="text" id="altura" name="altura" placeholder="Digite sua Altura">
+
+                <button type="submit">Calcular</button>
+            </form>
+
+
+            <div id="resultado"></div>
+
+        </section>
+    </div>
+    <div>
+        <footer>
+            sasa
+        </footer>
+    </div>
+     <script src='../js/mobile.js'></script>
+
 </body>
 </html>
