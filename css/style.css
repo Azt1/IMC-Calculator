@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
 }
 
 a {
@@ -103,14 +104,6 @@ body {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
-footer {
-    background-color: rgb(185, 245, 245);
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-}
-
  form {
     display: flex;
     justify-content: center;
@@ -133,8 +126,9 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 3rem;
+    padding: 5rem;
     margin-bottom: 20rem;
+    width: 450px;
 }
 
 .content h1 {
@@ -151,13 +145,14 @@ form input, form label, form button {
     margin-bottom: 10px; 
     border-radius: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#fff;
+    color: #fff;
 }
 
 form input {
     height: 50px;
     font-size: 15px;
     padding:0 20px;
+    color: #121214;
 }
 
 
@@ -219,4 +214,47 @@ input span:valid {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
     text-align: center;
     color: #fff;
+}
+
+footer {
+    background: url(../imgs/texture-bottom.jpg);
+    padding: 50px 0;
+}
+
+.container-footer {
+    max-width: 2000px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase ;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+.footer-col ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
 }
